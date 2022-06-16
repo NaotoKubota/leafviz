@@ -37,3 +37,12 @@ leafviz("/mydata/your_leafviz.RData")
 ```
 
 You can access `http://0.0.0.0:3838` on your local browser then LeafViz will launch.
+
+You can also generate simple reports, export tables, and classify clusters.
+
+```R
+# R
+make_report(infile = "/mydata/your_leafviz.RData", "/mydata/report")
+export_tables(infile = "/mydata/your_leafviz.RData", "/mydata/")
+classify_clusters(infile = "/mydata/your_leafviz.RData", "/mydata/")
+```
